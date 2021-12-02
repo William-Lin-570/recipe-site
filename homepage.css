@@ -1,0 +1,147 @@
+* {
+  font-family: courier;
+}
+
+
+.wallpaper {
+  background: #FAF3DD;
+}
+
+.site {
+  height: 600px;
+  background-color: #FAF3DD;
+}
+
+.horiz {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.titlebanner {
+  height: 6%;
+  background-color: #FAF3DD;
+  /*
+  background-color: rgb(165, 42, 42);
+  */
+}
+
+.sitebody {
+  height: 90%;
+  background-color: green;
+}
+
+.left {
+  width: 30%;
+  padding: 8px;
+  border-color: white;
+  /*
+  background-color: rgb(152, 168, 134);
+  */
+  background-color: #ffdccc;
+}
+
+.right {
+  /*
+  text-align:center;
+  */
+  width: 70%;
+  border-color: white;
+  background-color: purple;
+}
+
+.topbar {
+  height: 12%;
+  background-color: #fcb1a6;
+  margin: 8px;
+}
+
+.pantrybox {
+  /*line-height: 70px;
+  */
+  margin: 8px;
+  height: 85%;
+  background-color: #fcb1a6;
+}
+
+.ingredientslist {
+  margin: 8px;
+  height: 75%;
+  background-color: white;
+}
+
+.buttonscontainer {
+  margin: 8px;
+  padding: 4px;
+  height: 10%;
+  background-color: rgb(159, 252, 252);
+}
+
+.topbarleft {
+  height: 70%;
+  width: 40%;
+  background-color: lightgreen;
+  color: white;
+  font-size: 20px;
+}
+
+.topbarright {
+  height: 70%;
+  width: 60%;
+  background-color: lightblue;
+  color: white;
+  font-size: 20px;
+}
+
+.searchbar {
+  height: 8%;
+  width: 90%;
+  padding: 5%;
+  border-radius: 8px;
+  background-color: white;
+  color: grey;
+  font-size: 17px;
+  /*
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-family: "Gill Sans", sans-serif;
+  */
+}
+
+#searchbutton {
+  /*height: 8%;
+  */
+  width: 25%;
+  background-color: lightgreen;
+  border-color: darkgreen;
+}
+
+.search {
+  width: 92%;
+  margin-left: 3%;
+  margin-top: 8px;
+  /*
+  -ms-transform: translate(50%, 10%);
+  transform: translate(50%, 10%);
+   */
+}
+#pantrydeletebutton {
+  width: 100%;
+  margin: 5px; /* or whatever you like */
+  font-size: .93vw;
+}
+
+#pantrygeneratebutton {
+  width: 100%;
+  margin: 5px; /* or whatever you like */
+  font-size: .93vw;
+}
+
+#addbutton {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 4px;
+  font-size: 1vw;
+}
+
+.buttons {
+}

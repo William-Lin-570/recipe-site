@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link rel="stylesheet" href="./homepage.css" />
+  </header>
+  <body class = "wallpaper">
+  <div class="site">
+    <div class = "titlebanner">
+      <h1 style = "font-family: Gill Sans, sans-serif; text-align:center; vertical-align: middle; color:rgb(165, 42, 42)">CookBlur<h1>
+    </div>
+    <div class = "sitebody">
+      <div class = "horiz">
+        <div class = "left">
+          <div class="topbar">
+            <input type="text", class="search" placeholder="add ingredients here", id="ingredientInput"></input>
+            <input type="submit", value="Add", style = "font-family: Gill Sans", class="buttons", id="addbutton", onclick=addIngredient()></button>
+          </div>
+          <!-- Pantry Box -->
+          <div class="pantrybox">
+            <p style="font-family: Gill Sans, sans-serif; text-align:center; color:white">Your Pantry</p>
+            <div class="ingredientslist" id="pantryList">
+            </div>
+            <div class="buttonscontainer">
+              <div class="horiz">
+                <button style="font-family: Gill Sans", class="buttons", id="pantrydeletebutton", onclick=deleteLastIngredient()>Delete Last Ingredient</button>
+                <button style="font-family: Gill Sans", class="buttons", id="pantrygeneratebutton">Generate Recipes!</button>
+              </div>
+            </div>
+          </div>
+        <!-- API Call to Fetch All Recipes -->
+        </div>
+          <div class = "right">
+            <input class="search" placeholder="search for recipes here"></input>
+          </div>
+        </div>
+      </div>
+        <script src="./homepage.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
