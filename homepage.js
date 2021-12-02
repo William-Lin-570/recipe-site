@@ -1,9 +1,11 @@
+const apiKey = '636a1bbe30c1423fbc94c278e16834d7';
 let user_input = "";
-
 // Ingredient list = pantry list
 let currentIngredientList = [];
 let defaultText = "Ingredients you input will show up here!";
 document.getElementById("pantryList").innerText = defaultText;
+updatePantryListText(currentIngredientList);
+document.getElementsByClassName("recipeBox").innerText = "Recipes you generate will show up here!";
 
 function setListeners() {
 //Hint: We want to select all buttons from html and make it so that something happens when you click on the buttons! querySelectorAll might be helpful
@@ -61,3 +63,16 @@ function updatePantryListText(arr) {
         pantryList.innerText = arr.toString();
     }
 }
+
+async function generateRecipes() {
+    if (currentIngredientList.length == 0) {
+        return;
+    }
+    let ingredientString = pantryList.innerText;
+    let recipeResponse = await fetch('https://api.spoonacular.com/recipes/findByIngredients?apiKey=' + apiKey + '&ingredients=' + ingredientString + '&number=1');
+    let recipeText = await recipeResponse.text();
+    console.log(recipeText);
+    document.getElementsByClassName('rightBottom').innerText = 'done!';
+    //recipeText.toString();
+}
+

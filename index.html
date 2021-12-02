@@ -12,7 +12,7 @@
       <div class = "horiz">
         <div class = "left">
           <div class="topbar">
-            <input type="text", class="search" placeholder="add ingredients here", id="ingredientInput"></input>
+            <input type="text", class="ingredientAdder" placeholder="add ingredients here", id="ingredientInput"></input>
             <input type="submit", value="Add", style = "font-family: Gill Sans", class="buttons", id="addbutton", onclick=addIngredient()></button>
           </div>
           <!-- Pantry Box -->
@@ -23,14 +23,20 @@
             <div class="buttonscontainer">
               <div class="horiz">
                 <button style="font-family: Gill Sans", class="buttons", id="pantrydeletebutton", onclick=deleteLastIngredient()>Delete Last Ingredient</button>
-                <button style="font-family: Gill Sans", class="buttons", id="pantrygeneratebutton">Generate Recipes!</button>
+                <button style="font-family: Gill Sans", class="buttons", id="pantrygeneratebutton", onclick=generateRecipes()>Generate Recipes!</button>
               </div>
             </div>
           </div>
         <!-- API Call to Fetch All Recipes -->
         </div>
           <div class = "right">
-            <input class="search" placeholder="search for recipes here"></input>
+            <div class="rightTop">
+              <input class="search" placeholder="search for recipes here"></input>
+            </div>
+            <div class="rightBottom">
+              <p style="font-family: Gill Sans, sans-serif; text-align:center; color:white">Recipes</p>
+              <div class="recipeBox"></div>
+            </div>
           </div>
         </div>
       </div>

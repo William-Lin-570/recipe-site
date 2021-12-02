@@ -60,18 +60,22 @@
   /*line-height: 70px;
   */
   margin: 8px;
-  height: 85%;
+  height: 82%;
   background-color: #fcb1a6;
+  font-size: 1.5vw;
 }
 
 .ingredientslist {
-  margin: 8px;
-  height: 75%;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 72%;
   background-color: white;
+  font-size: 2vw;
+  color: grey;
 }
 
 .buttonscontainer {
-  margin: 8px;
+  margin: 16px;
   padding: 4px;
   height: 10%;
   background-color: rgb(159, 252, 252);
@@ -115,9 +119,9 @@
   border-color: darkgreen;
 }
 
-.search {
-  width: 92%;
-  margin-left: 3%;
+.ingredientAdder {
+  width: 90%;
+  margin-left: 5%;
   margin-top: 8px;
   /*
   -ms-transform: translate(50%, 10%);
@@ -144,4 +148,30 @@
 }
 
 .buttons {
+  margin: 5px;
 }
+
+.rightTop {
+  height: 15%;
+  background-color: chartreuse;
+}
+
+.search {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 24px;
+  font-size: 1.5vw
+}
+.rightBottom {
+  height: 85%;
+  background-color: cadetblue;
+}
+
+.recipeBox {
+  margin: 16px;
+  height: 72%;
+  background-color: white;
+  font-size: 1.5vw;
+}
+
+
