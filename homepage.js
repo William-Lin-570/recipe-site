@@ -70,9 +70,16 @@ async function generateRecipes() {
     }
     let ingredientString = pantryList.innerText;
     let recipeResponse = await fetch('https://api.spoonacular.com/recipes/findByIngredients?apiKey=' + apiKey + '&ingredients=' + ingredientString + '&number=1');
-    let recipeText = await recipeResponse.text();
+    let recipeText = recipeResponse.text();
     console.log(recipeText);
-    document.getElementsByClassName('rightBottom').innerText = 'done!';
-    //recipeText.toString();
+    document.getElementById("recipeBox").innerText = recipeText;
+    pantryList.innerText = defaultText;
 }
 
+function readableGeneration() {
+    if (currentIngredientList.length == 0) {
+        return;
+    }
+    let ingredientString = pantryList.innerText;
+}
+    

@@ -41,19 +41,20 @@
   background-color: #ffdccc;
 }
 
-.right {
-  /*
-  text-align:center;
-  */
-  width: 70%;
-  border-color: white;
-  background-color: purple;
-}
-
 .topbar {
   height: 12%;
   background-color: #fcb1a6;
   margin: 8px;
+}
+
+.ingredientAdder {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 8px;
+  /*
+  -ms-transform: translate(50%, 10%);
+  transform: translate(50%, 10%);
+   */
 }
 
 .pantrybox {
@@ -81,20 +82,13 @@
   background-color: rgb(159, 252, 252);
 }
 
-.topbarleft {
-  height: 70%;
-  width: 40%;
-  background-color: lightgreen;
-  color: white;
-  font-size: 20px;
-}
-
-.topbarright {
-  height: 70%;
-  width: 60%;
-  background-color: lightblue;
-  color: white;
-  font-size: 20px;
+.right {
+  /*
+  text-align:center;
+  */
+  width: 70%;
+  border-color: white;
+  background-color: purple;
 }
 
 .searchbar {
@@ -119,15 +113,6 @@
   border-color: darkgreen;
 }
 
-.ingredientAdder {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 8px;
-  /*
-  -ms-transform: translate(50%, 10%);
-  transform: translate(50%, 10%);
-   */
-}
 #pantrydeletebutton {
   width: 100%;
   margin: 5px; /* or whatever you like */
@@ -162,8 +147,9 @@
   margin-top: 24px;
   font-size: 1.5vw
 }
+
 .rightBottom {
-  height: 85%;
+  height: 80%;
   background-color: cadetblue;
 }
 
