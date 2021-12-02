@@ -6,24 +6,24 @@
   <body class = "wallpaper">
   <div class="site">
     <div class = "titlebanner">
-      <h1 style = "font-family: Gill Sans, sans-serif; text-align:center; vertical-align: middle; color:rgb(165, 42, 42)">CookBlur<h1>
+      <h1 style = "text-align:center; vertical-align: middle; color:rgb(165, 42, 42)">CookBlur<h1>
     </div>
     <div class = "sitebody">
       <div class = "horiz">
         <div class = "left">
           <div class="topbar">
             <input type="text", class="ingredientAdder" placeholder="add ingredients here", id="ingredientInput"></input>
-            <input type="submit", value="Add", style = "font-family: Gill Sans", class="buttons", id="addbutton", onclick=addIngredient()></button>
+            <input type="submit", value="Add", class="buttons", id="addbutton", onclick=addIngredient()></button>
           </div>
           <!-- Pantry Box -->
           <div class="pantrybox">
-            <p style="font-family: Gill Sans, sans-serif; text-align:center; color:white">Your Pantry</p>
+            <p style="text-align:center; color:white">Your Pantry</p>
             <div class="ingredientslist" id="pantryList">
             </div>
             <div class="buttonscontainer">
               <div class="horiz">
-                <button style="font-family: Gill Sans", class="buttons", id="pantrydeletebutton", onclick=deleteLastIngredient()>Delete Last Ingredient</button>
-                <button style="font-family: Gill Sans", class="buttons", id="pantrygeneratebutton", onclick=readableGeneration()>Generate Recipes!</button>
+                <button class="buttons", id="pantrydeletebutton", onclick=deleteLastIngredient()>Delete Last Ingredient</button>
+                <button class="buttons", id="pantrygeneratebutton", onclick=readableGeneration()>Generate Recipes!</button>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@
               <input class="search" placeholder="search for recipes here"></input>
             </div>
             <div class="rightBottom">
-              <p style="font-family: Gill Sans, sans-serif; text-align:center; color:white">Recipes</p>
+              <p style="text-align:center; color:white">Recipes</p>
               <div class="recipeBox", id="recipeBox"></div>
             </div>
           </div>

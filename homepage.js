@@ -158,7 +158,8 @@ async function readableGeneration() {
     document.getElementById("recipeBox").innerText = outputStr;
 
     //reset ingredient list to be empty
-    pantryList.innerText = defaultText;
+    currentIngredientList = [];
+    updatePantryListText(currentIngredientList);
 
 }
 
