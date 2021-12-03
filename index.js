@@ -5,7 +5,7 @@ var cors = require('cors')
 var app = express()
 
 app.use(cors())
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 
 const apiKey = '636a1bbe30c1423fbc94c278e16834d7';
 
