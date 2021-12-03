@@ -69,7 +69,7 @@ async function generateRecipes() {
         return;
     }
     let ingredientString = pantryList.innerText;
-    let recipeResponse = await fetch('https://api.spoonacular.com/recipes/findByIngredients?apiKey=' + apiKey + '&ingredients=' + ingredientString + '&number=1');
+    let recipeResponse = await fetch('https://cookblurdecal.herokuapp.com/' + apiKey + '&ingredients=' + ingredientString + '&number=1');
     let recipeText = recipeResponse.text();
     console.log(recipeText);
     document.getElementById("recipeBox").innerText = recipeText;
@@ -89,7 +89,7 @@ async function readableGeneration() {
     let numToFetch = 30;
 
     //the url that we make API call to, with ingredients appended onto the end of query
-    let fetchString = 'https://api.spoonacular.com/recipes/findByIngredients?apiKey=' + apiKey + '&ingredients=' + ingredientString + '&number=' + numToFetch;
+    let fetchString = 'https://cookblurdecal.herokuapp.com/' + apiKey + '&ingredients=' + ingredientString + '&number=' + numToFetch;
     
     //make API call
     const myRequest = new Request(fetchString);
